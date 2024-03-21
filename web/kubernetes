@@ -1,0 +1,59 @@
+## what is kubernetes:- 
+-> kubernetes is a container orchistration engine for automating deployment , scaling and management of containerized application.
+-> kubernetes is an open-source container management tool which automates container deployment , container scaling & load balancing.
+-> it schedules , runs and manages isolated containers which running on virtual/physical/cloud machines.
+-> all top cloud provider support kubernetes.
+
+## problems with scaling up the container :-
+-> container cannot communicate with each other.
+-> autoscaling and load balancing was not possible.
+-> containers had to be managed carefully.
+
+## features of kubernetes :-
+-> orchisteration (Clustering of any no. of container running on differnt N/W).
+-> autoscaling > horizontal, vertical supports
+-> auto-healing 
+-> load balancing.
+-> kubernetes supports hybrid cloud.
+-> platform independent (cloud/virtual/physical).
+-> health monitors of containers.
+-> fault tolerance(NODE, POD failure).
+-> Rollback .
+-> batch execution.
+
+
+## kubernetes vs docker swarm :-
+# kubenetes :- 
+-> complicated and time consuming 
+-> it can work with almost all container types like rocket, docker containers.
+-> GUI aviaiblable.
+-> volumes only shared with containers within same pod.
+-> process sheduling to maintain services while updating.
+-> support vertical and horizontal autoscaling.
+
+# docker swarm :-
+-> fast and easy.
+-> work with only docker containers.
+-> gui not available.
+-> volumes can be shared with the other containers.
+-> progressive updates and health monitoring through updates.
+-> not support scaling.
+
+## kubernetes master and slave :-
+cluster>>master>>node>>POD>>container>>application(microservice).
+pod >> smallest unit of kubernetes.
+
+## monolithic and microservices :-
+monolithic -> means single service
+microservices -> meand mulitiple service.
+
+-> Monolithic applications are a single codebase, while microservices are composed of multiple loosely-coupled services. Monolithic applications typically consist of a client-side UI, a database, and a server-side application. In microservices, each microservice works to accomplish a single feature or business logic
+
+## minicube :- 
+local me chalne h toh kubernetes
+
+
+## installation :-
+https://github.com/dubeytapan12/RunK8sOnWSL
+
+## KuberNetes Architecture :- 
