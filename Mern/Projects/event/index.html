@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events-Sikho</title>
+</head>
+<body style="background-color: #212121; color:aliceblue">
+    <h1> Mihir Jain</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // ek bar apna time doo fir me usko execute kr dunga
+    // setTimeout(function(){
+    //     console.log("Mihir");
+    // }, 2000);
+      
+    const sayMihir  = function(){
+        console.log("Mihir");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="Mihir Jain Is Best Developer";
+    }
+    const changeMe = setTimeout(changeText,2000);
+    
+    document.querySelector('#stop').addEventListener('click', function() {
+        clearTimeout(changeMe);
+        console.log("Stopped");
+    })
+
+    setTimeout(sayMihir,2000);
+
+
+
+    // setInterval() -> ek bar time do me usko baar us time ek ispse run krta jaunga
+
+</script>
+</html>

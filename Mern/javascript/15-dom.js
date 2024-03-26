@@ -13,4 +13,7 @@
 // document.querySelector('#title') // jo bhi id select krni hai 
 // document.querySelector('.class') // job bhi classname select krna hai 
 
+// node list hamse array ke arr[0] asee chlta hai
+// html collection ko array me convert krna padega arrayof function se  yh arrayfrom(htmlcollction)
+
 
