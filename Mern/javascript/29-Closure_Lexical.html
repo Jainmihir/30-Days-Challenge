@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body style="background-color: #212121; color:aliceblue">
+    <button id="red"> Red</button>
+    <button id="green"> Green </button>
+</body>
+<script>
+    
+    //     document.getElementById('red').onclick = function(){
+    //     document.body.style.backgroundColor = 'Red';
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = 'Green';
+    // }
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`;
+        return function(){
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+
+    document.getElementById('red').onclick = clickHandler("Red");
+    document.getElementById('green').onclick = clickHandler("Green");
+  
+    
+</script>
+</html>
